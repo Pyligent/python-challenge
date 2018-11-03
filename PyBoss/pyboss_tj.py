@@ -3,7 +3,7 @@
 """
 Created on Fri Nov  2 16:30:55 2018
 
-@author: my_macbook
+@author: Tao Jin
 """
 
 # Path to collect data from the Resources folder
@@ -101,6 +101,7 @@ for i in range(len(employee_data)):
 
 
 # Output new date file
+# New Data is in employee_file.csv
 
 with open('employee_file.csv', mode='w') as employee_file:
     employee_writer = csv.writer(employee_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
