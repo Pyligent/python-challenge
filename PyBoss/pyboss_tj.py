@@ -83,14 +83,18 @@ with open(csvpath, 'r') as csvfile:
 for i in range(len(employee_data)):
     #Split the name:
     Firstname_Lastname = employee_data[i][1].split(' ')
+    
     #Format the DOB:
     DOB_date = datetime.strptime(employee_data[i][2],'%Y-%m-%d')
     DOB_date_MMDDYY = datetime.strftime(DOB_date,'%m/%d/%Y')
+    
     #Format the SSN
     SSN_lastfour = employee_data[i][3][6:]
     Hidden_SSN = '***-**' + SSN_lastfour
+    
     # Format the State:
     State_Abbr = us_state_abbrev.get(employee_data[i][4])
+    
     #Build new data list
     employee_data[i] = employee_data[i][:1] 
     employee_data[i].append(Firstname_Lastname[0])
