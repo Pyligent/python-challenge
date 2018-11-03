@@ -32,10 +32,3 @@ Approximate Sentence Count: 5
 Average Letter Count: 4.6
 Average Sentence Length: 24.0
 ```
-
-* **Special Hint:** You may find this code snippet helpful when determining sentence length (look into [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) if interested in learning more):
-
-```python
-import re
-re.split("(?<=[.!?]) +", paragraph)
-```
