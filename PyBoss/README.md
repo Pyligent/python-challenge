@@ -33,5 +33,3 @@ Emp ID,First Name,Last Name,DOB,SSN,State
   * The `SSN` data should be re-written such that the first five numbers are hidden from view.
 
   * The `State` data should be re-written as simple two-letter abbreviations.
-
-* Special Hint: You may find this link to be helpful—[Python Dictionary for State Abbreviations](https://gist.github.com/afhaque/29f0f4f37463c447770517a6c17d08f5).
